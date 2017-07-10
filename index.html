@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>中国人民大学信息学院检索系统</title>
+	<style type="text/css">
+		body{
+			background:url("c.jpg");
+			margin:0;
+		}
+		form{
+			position: absolute;
+			left:30%;
+			top:20%;
+			margin-left: -300px;
+		}
+		#submit{
+			position: absolute;
+			left:510px;
+			top: -2px;
+			width: 80px;
+			height: 36px;
+			color: black;
+			font-family: 微软雅黑;
+			display: block;
+			border-radius: 2px;
+			background-color: rgba(255,255,255, 0);
+			border-color: skyblue;
+
+			}
+		#txt{
+			width: 500px;
+			height: 30px;
+			background-color: rgba(255,255,255,0.3);
+			border:1px;
+			border-style:solid;
+			border-color: skyblue;
+		}
+		#img1{
+			width: 100%;
+			height: 100%;
+			top : 100%;
+		}
+		h1{
+			position: absolute;
+			left:50%;
+			top:50%;
+			margin-left: -250px;
+			margin-top: -80px;
+			color: white;
+			font-weight: normal;
+		}
+	</style>
+</head>
+<body>
+<img src="c.jpg" id = "img1">
+<form action = "http://localhost:81/cgi-bin/cgi_1.py" method = "get">
+<input type="text" name="txt" id="txt">
+<button type="submit" id="submit">Search</button>
+</form>
+</body>
+</html>
